@@ -31,17 +31,19 @@ All three scenarios stayed within the UK's statutory voltage limits (0.94–1.10
 This project uses `py-dss-interface` rather than the more actively-maintained `OpenDSSDirect.py`, specifically because it interfaces with the **official EPRI OpenDSS engine** — the same engine real UK DNOs use — rather than a reimplementation. For a project meant to demonstrate DNO-relevant technical credibility, this was a deliberate trade-off: slightly less active maintenance and Windows-only support, in exchange for results that map directly to the industry-standard tool.
 
 ## Project Structure
+```
 opendss-distribution-network-uk/
 ├── data/
 ├── notebooks/
-├── outputs/ # saved CSVs and voltage profile graphs
+├── outputs/              # saved CSVs and voltage profile graphs
 ├── scripts/
-│ ├── build_network.py # baseline UK LV feeder model
-│ ├── add_solar.py # solar PV scenario
-│ ├── add_EV_chargers.py # EV charging scenario
-│ └── compare_scenarios.py # combined comparison graph
+│   ├── build_network.py       # baseline UK LV feeder model
+│   ├── add_solar.py           # solar PV scenario
+│   ├── add_EV_chargers.py     # EV charging scenario
+│   └── compare_scenarios.py   # combined comparison graph
 ├── requirements.txt
 └── README.md
+```
 
 
 ## How to Run
